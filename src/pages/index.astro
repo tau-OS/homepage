@@ -1,0 +1,117 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { Image } from "astro:assets";
+import overviewImage from "../assets/overview.webp";
+---
+
+<!-- TODO: hack for "min margins", move to layout -->
+<Layout title="Welcome to tauOS">
+  <Navbar pathname={Astro.url.pathname} client:load />
+
+  <div class="mx-6 mb-12">
+    <div class="mx-auto max-w-5xl">
+      <section class="flex items-center gap-12">
+        <div class="flex-1">
+          <h1 class="font-bold text-5xl mb-4 dark:opacity-[92%]">
+            Welcome to your next-generation operating system.
+          </h1>
+
+          <p class="mt-6 text-gray-800 dark:text-gray-300">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            dicta modi eligendi placeat non hic, et quia quisquam libero dolorem
+            molestias.
+          </p>
+
+          <div class="flex mt-6 gap-4 items-center">
+            <a
+              href=""
+              class="flex items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Learn More <ArrowRightIcon
+                name="fa-solid:chevron-right"
+                className="inline-block h-4"
+              /></a
+            >
+            <a
+              href=""
+              class="flex items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Get involved <ArrowRightIcon
+                name="fa-solid:chevron-right"
+                className="inline-block h-4"
+              /></a
+            >
+          </div>
+        </div>
+
+        <div class="flex-1 hidden lg:block">
+          <Image
+            src={overviewImage}
+            alt="About tauOS"
+            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
+          />
+        </div>
+      </section>
+
+      <section class="flex items-center gap-12 mt-6">
+        <div class="flex-1">
+          <h1 class="font-bold text-3xl dark:opacity-[92%]">
+            For everything in the present, and the future.
+          </h1>
+          <h2>You name it, we run it.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            adipisci odit, temporibus ratione quas, dicta sed quos consequatur
+            perferendis perspiciatis soluta quo doloremque doloribus eaque,
+            magnam incidunt consectetur quibusdam similique.
+          </p>
+        </div>
+
+        <div>
+          <div class="h-72 w-96 bg-purple-200 rounded"></div>
+
+          <div class="flex justify-between">
+            <a href="">Play</a>
+            <a href="">Work</a>
+            <a href="">Create</a>
+            <a href="">Develop</a>
+          </div>
+        </div>
+        <!-- Toggable with gaming, work, etc... -->
+      </section>
+
+      <section class="mt-6">
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          Everything, all at once.
+        </h1>
+        <h2>A workspace between every device</h2>
+
+        <p>Sync.</p>
+
+        <div></div>
+      </section>
+
+      <section class="mt-6">
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          Resilliency at the core.
+        </h1>
+        <h2>Updating, please don't unplug your computer</h2>
+        <p>OSTree. bleh</p>
+      </section>
+
+      <section class="mt-6">
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          An ecosystem that awes.
+        </h1>
+      </section>
+
+      <section class="mt-6">
+        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
+          Radically open.
+        </h1>
+
+        <!-- commits -->
+      </section>
+    </div>
+  </div>
+</Layout>

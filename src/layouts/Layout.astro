@@ -1,0 +1,37 @@
+---
+import "../../public/css/satoshi.css";
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <slot name="head" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#7e22ce" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script
+      defer
+      data-domain="tauos.co"
+      src="https://anyawytics.fyralabs.com/js/script.js"></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    @apply bg-zinc-50 dark:bg-zinc-900 dark:text-gray-50;
+  }
+</style>
