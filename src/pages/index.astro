@@ -15,7 +15,7 @@ import Carousel from "../components/Carousel";
 
   <div class="mx-6 mb-12">
     <div class="mx-auto max-w-5xl flex flex-col gap-20">
-      <section class="flex items-center gap-12">
+      <section class="flex items-center gap-12 justify-around">
         <div class="flex-1">
           <h1 class="font-bold text-5xl mb-4 dark:opacity-[92%]">
             Welcome to your next-generation operating system.
@@ -57,7 +57,7 @@ import Carousel from "../components/Carousel";
       </section>
 
       <section class="flex items-center gap-12 flex-wrap-reverse">
-        <div>
+        <div class="flex-1 flex-shrink">
           <Carousel
             client:load
             views={[
@@ -68,13 +68,13 @@ import Carousel from "../components/Carousel";
               },
               {
                 name: "Create",
-                description: "",
-                image: "",
+                description: "A example creative setup",
+                image: "/carousel/create.webp",
               },
               {
                 name: "Develop",
                 description: "",
-                image: "",
+                image: "/carousel/develop.webp",
               },
               {
                 name: "Study",
@@ -85,7 +85,7 @@ import Carousel from "../components/Carousel";
           />
         </div>
 
-        <div class="flex-1">
+        <div class="flex-1 items-center gap-12 justify-around">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             For everything in the present, and the future.
           </h1>
@@ -99,9 +99,7 @@ import Carousel from "../components/Carousel";
         </div>
       </section>
 
-      <section class="flex
-            items-center
-            gap-12">
+      <section class="flex items-center gap-12 justify-around">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Everything, all at once.
@@ -118,7 +116,7 @@ import Carousel from "../components/Carousel";
         <div></div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap">
+      <section class="flex items-center gap-12 flex-wrap justify-around">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Resilliency at the core.
@@ -132,16 +130,14 @@ import Carousel from "../components/Carousel";
           </p>
         </div>
 
-        <div class="">
-          <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col">
-            <p class="text-4xl font-bold">:)</p>
-            <p class="mt-4 text-lg leading-6">
-              Your power went out during an update. The system has been rolled
-              back and your data is safe.
-            </p>
+        <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col">
+          <p class="text-4xl font-bold">:)</p>
+          <p class="mt-4 text-lg leading-6">
+            Your power went out during an update. The system has been rolled
+            back and your data is safe.
+          </p>
 
-            <p class="mt-auto text-xs">Error code: NONE</p>
-          </div>
+          <p class="mt-auto text-xs">Error code: NONE</p>
         </div>
       </section>
 
@@ -160,7 +156,7 @@ import Carousel from "../components/Carousel";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap">
+      <section class="flex items-center gap-12 flex-wrap justify-around">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Privacy as a first class citizen.
@@ -196,7 +192,7 @@ import Carousel from "../components/Carousel";
         </div>
       </section>
 
-      <section class="flex items-center gap-12">
+      <section class="flex items-center gap-12 justify-around">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">Radically open.</h1>
           <h2 class="text-xl mt-1">Because you deserve freedom</h2>

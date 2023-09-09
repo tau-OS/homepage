@@ -1,7 +1,7 @@
 import { Tab } from "@headlessui/react";
 import { Fragment, type FC } from "react";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
