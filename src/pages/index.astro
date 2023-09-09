@@ -57,32 +57,14 @@ import Carousel from "../components/Carousel";
       </section>
 
       <section class="flex items-center gap-12">
-        <div class="flex-1">
-          <h1 class="font-bold text-4xl dark:opacity-[92%]">
-            For everything in the present, and the future.
-          </h1>
-          <h2 class="text-xl mt-2">You name it, we can run it</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            adipisci odit, temporibus ratione quas, dicta sed quos consequatur
-            perferendis perspiciatis soluta quo doloremque doloribus eaque,
-            magnam incidunt consectetur quibusdam similique.
-          </p>
-        </div>
-
         <div>
           <Carousel
             client:load
             views={[
               {
                 name: "Play",
-                description: "",
-                image: "",
-              },
-              {
-                name: "Work",
-                description: "",
-                image: "",
+                description: "An example gaming setup",
+                image: "/carousel/play.webp",
               },
               {
                 name: "Create",
@@ -102,7 +84,19 @@ import Carousel from "../components/Carousel";
             ]}
           />
         </div>
-        <!-- Toggable with gaming, work, etc... -->
+
+        <div class="flex-1">
+          <h1 class="font-bold text-4xl dark:opacity-[92%]">
+            For everything in the present, and the future.
+          </h1>
+          <h2 class="text-xl mt-2">You name it, we can run it</h2>
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            adipisci odit, temporibus ratione quas, dicta sed quos consequatur
+            perferendis perspiciatis soluta quo doloremque doloribus eaque,
+            magnam incidunt consectetur quibusdam similique.
+          </p>
+        </div>
       </section>
 
       <section class="flex
