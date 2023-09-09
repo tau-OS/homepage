@@ -5,6 +5,8 @@ import { ArrowRightIcon, LockClosedIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
 import owenImage from "../assets/owen.webp";
+import ecosystemImage from "../assets/ecosystem.webp";
+import syncImage from "../assets/sync.webp";
 import CommitCard from "../components/CommitCard.astro";
 import Carousel from "../components/Carousel";
 ---
@@ -22,10 +24,11 @@ import Carousel from "../components/Carousel";
           </h1>
 
           <p class="mt-6 text-gray-800 dark:text-gray-300">
-           Discover the future of desktop computing with tauOS, currently in development. 
-           tauOS is designed with ease of use in mind, featuring human-centric design, 
-           an unbreakable core, and an syncing service that synchronizes files, configurations, 
-           keys, and more across all your devices.
+            Discover the future of desktop computing with tauOS, currently in
+            development. tauOS is designed with ease of use in mind, featuring
+            human-centric design, an unbreakable core, and an syncing service
+            that synchronizes files, configurations, keys, and more across all
+            your devices.
           </p>
 
           <div class="flex mt-6 gap-4 items-center">
@@ -92,9 +95,10 @@ import Carousel from "../components/Carousel";
           </h1>
           <h2 class="text-xl mt-2">From Audacity to Zoom</h2>
           <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            tauOS supports a large selection of software. From native apps 
-            in Catalogue and Flathub, professional software like DaVinci Resolve, 
-            and many popular games on Steam. You're sure to find the tools you need on tau.
+            tauOS supports a large selection of software. From native apps in
+            Catalogue and Flathub, professional software like DaVinci Resolve,
+            and many popular games on Steam. You're sure to find the tools you
+            need on tau.
           </p>
         </div>
       </section>
@@ -106,29 +110,20 @@ import Carousel from "../components/Carousel";
           </h1>
           <h2 class="text-xl mt-2">Continuity at the core</h2>
           <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            tauOS' included sync tool allows your work to span across multiple devices.
-            Start writing on your laptop on the train, and continue where you left off on 
-            your desktop at home. We sync your settings, files, and clipboard automatically
-            so you can spend more time doing what you love.
+            tauOS' included sync tool allows your work to span across multiple
+            devices. Start writing on your laptop on the train, and continue
+            where you left off on your desktop at home. We sync your settings,
+            files, and clipboard automatically so you can spend more time doing
+            what you love.
           </p>
         </div>
 
-        <div></div>
+        <div class="flex-1">
+          <Image src={syncImage} alt="About tauOS" />
+        </div>
       </section>
 
       <section class="flex items-center gap-12 flex-wrap justify-around">
-        <div class="flex-1">
-          <h1 class="font-bold text-4xl dark:opacity-[92%]">
-            Resilliency built in
-          </h1>
-          <h2 class="text-xl mt-1">Install once, reinstall never</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            tauOS features an unbreakable core, allowing you to experiment and simply
-            reboot to return your system to normal. If an update broke something (we doubt it will)
-            you can easily revert to a previous version. Reinstalling is a thing of the past! 
-          </p>
-        </div>
-
         <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col">
           <p class="text-4xl font-bold">:)</p>
           <p class="mt-4 text-lg leading-6">
@@ -138,6 +133,19 @@ import Carousel from "../components/Carousel";
 
           <p class="mt-auto text-xs">Error code: NONE</p>
         </div>
+
+        <div class="flex-1">
+          <h1 class="font-bold text-4xl dark:opacity-[92%]">
+            Resilliency built in
+          </h1>
+          <h2 class="text-xl mt-1">Install once, reinstall never</h2>
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
+            tauOS features an unbreakable core, allowing you to experiment and
+            simply reboot to return your system to normal. If an update broke
+            something (we doubt it will) you can easily revert to a previous
+            version. Reinstalling is a thing of the past!
+          </p>
+        </div>
       </section>
 
       <section class="flex items-center gap-12">
@@ -145,32 +153,28 @@ import Carousel from "../components/Carousel";
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             An ecosystem that awes.
           </h1>
-          <h2 class="text-xl mt-1">A coherent experience for users and developers</h2>
+          <h2 class="text-xl mt-1">
+            A coherent experience for users and developers
+          </h2>
           <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            tauOS provides a developer experience designed to make the proccess of building
-            an app easier and more secure. With Helium, developers can build one app that runs
-            across computers and mobile devices, and users receive an experience designed with them in mind.
-            Developing for tauOS is a win-win!
+            tauOS provides a developer experience designed to make the proccess
+            of building an app easier and more secure. With Helium, developers
+            can build one app that runs across computers and mobile devices, and
+            users receive an experience designed with them in mind. Developing
+            for tauOS is a win-win!
           </p>
+        </div>
+
+        <div class="flex-1 hidden lg:block">
+          <Image
+            src={ecosystemImage}
+            alt="About tauOS"
+            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
+          />
         </div>
       </section>
 
       <section class="flex items-center gap-12 flex-wrap justify-around">
-        <div class="flex-1">
-          <h1 class="font-bold text-4xl dark:opacity-[92%]">
-            Privacy as a first class citizen
-          </h1>
-          <h2 class="text-xl mt-1">
-            Because we don't care what you do on your computer
-          </h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            We believe strongly in the right to privacy. Your files are protected by
-            industry standard encryption, not even we can see your data. 
-            tauOS also includes security features to protect your privacy, 
-            like disk encryption, an immutable core, and virus resistance.
-          </p>
-        </div>
-
         <div class="relative hover:shadow-md">
           <div
             class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end backdrop-blur-sm hover:backdrop-blur-none transition-all rounded-2xl"
@@ -189,6 +193,21 @@ import Carousel from "../components/Carousel";
             class="rounded-2xl transition-all bg-neutral-100 dark:bg-neutral-800 max-w-[300px]"
           />
         </div>
+
+        <div class="flex-1">
+          <h1 class="font-bold text-4xl dark:opacity-[92%]">
+            Privacy as a first class citizen
+          </h1>
+          <h2 class="text-xl mt-1">
+            Because we don't care what you do on your computer
+          </h2>
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
+            We believe strongly in the right to privacy. Your files are
+            protected by industry standard encryption, not even we can see your
+            data. tauOS also includes security features to protect your privacy,
+            like disk encryption, an immutable core, and virus resistance.
+          </p>
+        </div>
       </section>
 
       <section class="flex items-center gap-12 flex-wrap justify-around">
@@ -196,9 +215,10 @@ import Carousel from "../components/Carousel";
           <h1 class="font-bold text-4xl dark:opacity-[92%]">Radically open.</h1>
           <h2 class="text-xl mt-1">Because you deserve freedom</h2>
           <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
-            tauOS is open source meaning anyone can see and modify (with approval) the code. 
-            We are open to new perspectives and ideas brought by our community and users. 
-            Have a feature we don't provide? Build it yourself and we'll ship it.
+            tauOS is open source meaning anyone can see and modify (with
+            approval) the code. We are open to new perspectives and ideas
+            brought by our community and users. Have a feature we don't provide?
+            Build it yourself and we'll ship it.
           </p>
         </div>
 
