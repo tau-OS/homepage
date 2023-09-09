@@ -12,7 +12,7 @@ import lainsImage from "../assets/lains.webp";
   <Navbar pathname={Astro.url.pathname} client:load />
 
   <div class="mx-6 mb-12">
-    <div class="mx-auto max-w-5xl">
+    <div class="mx-auto max-w-5xl flex flex-col gap-20">
       <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-5xl mb-4 dark:opacity-[92%]">
@@ -49,18 +49,18 @@ import lainsImage from "../assets/lains.webp";
           <Image
             src={overviewImage}
             alt="About tauOS"
-            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
+            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800 h-96"
           />
         </div>
       </section>
 
-      <section class="flex items-center gap-12 mt-6">
+      <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             For everything in the present, and the future.
           </h1>
           <h2 class="text-xl mt-2">You name it, we can run it.</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300">
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -82,13 +82,13 @@ import lainsImage from "../assets/lains.webp";
         <!-- Toggable with gaming, work, etc... -->
       </section>
 
-      <section class="flex items-center gap-12 mt-6">
+      <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Everything, all at once.
           </h1>
           <h2 class="text-xl mt-2">A workspace between every device</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300">
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -99,13 +99,13 @@ import lainsImage from "../assets/lains.webp";
         <div></div>
       </section>
 
-      <section class="flex items-center gap-12 mt-6">
+      <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Resilliency at the core.
           </h1>
           <h2 class="text-xl mt-1">Install once, reinstall never</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300">
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -126,13 +126,13 @@ import lainsImage from "../assets/lains.webp";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 mt-6">
+      <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             An ecosystem that awes.
           </h1>
           <h2 class="text-xl mt-1">Apps, apps, and more apps.</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300">
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -141,7 +141,7 @@ import lainsImage from "../assets/lains.webp";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 mt-6">
+      <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Privacy as a first class citizen.
@@ -149,7 +149,7 @@ import lainsImage from "../assets/lains.webp";
           <h2 class="text-xl mt-1">
             Competitors don't give a #@!& about your best interests
           </h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300">
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -158,11 +158,11 @@ import lainsImage from "../assets/lains.webp";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 mt-6">
+      <section class="flex items-center gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">Radically open.</h1>
           <h2 class="text-xl mt-1">Because you deserve freedom</h2>
-          <p class="mt-6 text-gray-800 dark:text-gray-300">
+          <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -172,7 +172,53 @@ import lainsImage from "../assets/lains.webp";
 
         <!-- commits -->
 
-        <div class="flex">
+        <div class="flex flex-col gap-2">
+          <article
+            class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
+          >
+            <div>
+              <h1 class="font-medium dark:opacity-[92%]">
+                ButtonContent.vala - Increase spacing
+              </h1>
+              <div class="flex flex-row gap-2 items-center">
+                <h2 class="flex flex-row gap-1.5 items-center">
+                  <Image
+                    src={lainsImage}
+                    alt="Laince's profile picture"
+                    class="rounded-full h-5 w-5 inline-block"
+                  /> Laince
+                </h2>
+
+                <span class="ml-auto text-gray-800 dark:text-gray-300 text-sm"
+                  >tau-OS/libhelium</span
+                >
+                <CheckIcon className="text-green-500 h-4" />
+              </div>
+            </div>
+          </article>
+          <article
+            class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
+          >
+            <div>
+              <h1 class="font-medium dark:opacity-[92%]">
+                ButtonContent.vala - Increase spacing
+              </h1>
+              <div class="flex flex-row gap-2 items-center">
+                <h2 class="flex flex-row gap-1.5 items-center">
+                  <Image
+                    src={lainsImage}
+                    alt="Laince's profile picture"
+                    class="rounded-full h-5 w-5 inline-block"
+                  /> Laince
+                </h2>
+
+                <span class="ml-auto text-gray-800 dark:text-gray-300 text-sm"
+                  >tau-OS/libhelium</span
+                >
+                <CheckIcon className="text-green-500 h-4" />
+              </div>
+            </div>
+          </article>
           <article
             class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
           >
