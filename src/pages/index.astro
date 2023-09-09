@@ -5,6 +5,7 @@ import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
 import lainsImage from "../assets/lains.webp";
+import CommitCard from "../components/CommitCard.astro";
 ---
 
 <!-- TODO: hack for "min margins", move to layout -->
@@ -172,76 +173,16 @@ import lainsImage from "../assets/lains.webp";
 
         <!-- commits -->
 
-        <div class="flex flex-col gap-2">
-          <article
-            class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
-          >
-            <div>
-              <h1 class="font-medium dark:opacity-[92%]">
-                ButtonContent.vala - Increase spacing
-              </h1>
-              <div class="flex flex-row gap-2 items-center">
-                <h2 class="flex flex-row gap-1.5 items-center">
-                  <Image
-                    src={lainsImage}
-                    alt="Laince's profile picture"
-                    class="rounded-full h-5 w-5 inline-block"
-                  /> Laince
-                </h2>
-
-                <span class="ml-auto text-gray-800 dark:text-gray-300 text-sm"
-                  >tau-OS/libhelium</span
-                >
-                <CheckIcon className="text-green-500 h-4" />
-              </div>
-            </div>
-          </article>
-          <article
-            class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
-          >
-            <div>
-              <h1 class="font-medium dark:opacity-[92%]">
-                ButtonContent.vala - Increase spacing
-              </h1>
-              <div class="flex flex-row gap-2 items-center">
-                <h2 class="flex flex-row gap-1.5 items-center">
-                  <Image
-                    src={lainsImage}
-                    alt="Laince's profile picture"
-                    class="rounded-full h-5 w-5 inline-block"
-                  /> Laince
-                </h2>
-
-                <span class="ml-auto text-gray-800 dark:text-gray-300 text-sm"
-                  >tau-OS/libhelium</span
-                >
-                <CheckIcon className="text-green-500 h-4" />
-              </div>
-            </div>
-          </article>
-          <article
-            class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
-          >
-            <div>
-              <h1 class="font-medium dark:opacity-[92%]">
-                ButtonContent.vala - Increase spacing
-              </h1>
-              <div class="flex flex-row gap-2 items-center">
-                <h2 class="flex flex-row gap-1.5 items-center">
-                  <Image
-                    src={lainsImage}
-                    alt="Laince's profile picture"
-                    class="rounded-full h-5 w-5 inline-block"
-                  /> Laince
-                </h2>
-
-                <span class="ml-auto text-gray-800 dark:text-gray-300 text-sm"
-                  >tau-OS/libhelium</span
-                >
-                <CheckIcon className="text-green-500 h-4" />
-              </div>
-            </div>
-          </article>
+        <div class="flex flex-col gap-2 w-80">
+          <CommitCard
+            url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"
+          />
+          <CommitCard
+            url="https://github.com/tau-OS/libhelium/commit/a868a129066b3e22dc3f392857c413b7575a03c0"
+          />
+          <CommitCard
+            url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"
+          />
         </div>
       </section>
     </div>
