@@ -4,8 +4,9 @@ import Navbar from "../components/Navbar";
 import { ArrowRightIcon, LockClosedIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
-import blurredImage from "../assets/blurred.webp";
+import owenImage from "../assets/owen.webp";
 import CommitCard from "../components/CommitCard.astro";
+import Carousel from "../components/Carousel";
 ---
 
 <!-- TODO: hack for "min margins", move to layout -->
@@ -70,20 +71,43 @@ import CommitCard from "../components/CommitCard.astro";
         </div>
 
         <div>
-          <div class="h-72 w-96 bg-purple-200 rounded"></div>
-
-          <div class="flex justify-between">
-            <a href="">Play</a>
-            <a href="">Work</a>
-            <a href="">Create</a>
-            <a href="">Develop</a>
-            <a href="">Study</a>
-          </div>
+          <Carousel
+            client:load
+            views={[
+              {
+                name: "Play",
+                description: "",
+                image: "",
+              },
+              {
+                name: "Work",
+                description: "",
+                image: "",
+              },
+              {
+                name: "Create",
+                description: "",
+                image: "",
+              },
+              {
+                name: "Develop",
+                description: "",
+                image: "",
+              },
+              {
+                name: "Study",
+                description: "",
+                image: "",
+              },
+            ]}
+          />
         </div>
         <!-- Toggable with gaming, work, etc... -->
       </section>
 
-      <section class="flex items-center gap-12">
+      <section class="flex
+            items-center
+            gap-12">
         <div class="flex-1">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             Everything, all at once.
@@ -171,7 +195,7 @@ import CommitCard from "../components/CommitCard.astro";
             </div>
           </div>
           <Image
-            src={blurredImage}
+            src={owenImage}
             alt="Blurred image"
             class="rounded-2xl transition-all bg-neutral-100 dark:bg-neutral-800 max-w-[300px]"
           />
