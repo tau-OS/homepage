@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
-import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, LockClosedIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
-import lainsImage from "../assets/lains.webp";
+import blurredImage from "../assets/blurred.webp";
 import CommitCard from "../components/CommitCard.astro";
 ---
 
@@ -148,7 +148,7 @@ import CommitCard from "../components/CommitCard.astro";
             Privacy as a first class citizen.
           </h1>
           <h2 class="text-xl mt-1">
-            Competitors don't give a #@!& about your best interests
+            The incumbents don't give a #@!& about your best interests
           </h2>
           <p class="mt-6 text-gray-800 dark:text-gray-300 [text-wrap:balance]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
@@ -156,6 +156,25 @@ import CommitCard from "../components/CommitCard.astro";
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
             magnam incidunt consectetur quibusdam similique.
           </p>
+        </div>
+
+        <div class="relative hover:shadow-md">
+          <div
+            class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end backdrop-blur-sm hover:backdrop-blur-none transition-all rounded-2xl"
+          >
+            <div
+              class="flex flex-row items-center p-2 bg-neutral-100 dark:bg-neutral-800 rounded-b-xl gap-2"
+            >
+              <LockClosedIcon className="h-5" />{" "}<p>
+                End to end encryption
+              </p>
+            </div>
+          </div>
+          <Image
+            src={blurredImage}
+            alt="Blurred image"
+            class="rounded-2xl transition-all bg-neutral-100 dark:bg-neutral-800 max-w-[300px]"
+          />
         </div>
       </section>
 
@@ -174,7 +193,7 @@ import CommitCard from "../components/CommitCard.astro";
         <!-- commits -->
 
         <div class="flex flex-col gap-2 w-80">
-          <CommitCard
+          <!-- <CommitCard
             url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"
           />
           <CommitCard
@@ -182,7 +201,7 @@ import CommitCard from "../components/CommitCard.astro";
           />
           <CommitCard
             url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"
-          />
+          /> -->
         </div>
       </section>
     </div>
