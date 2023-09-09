@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, CheckIcon } from "@heroicons/react/24/outline";
 import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
+import lainsImage from "../assets/lains.webp";
 ---
 
 <!-- TODO: hack for "min margins", move to layout -->
@@ -58,8 +59,8 @@ import overviewImage from "../assets/overview.webp";
           <h1 class="font-bold text-3xl dark:opacity-[92%]">
             For everything in the present, and the future.
           </h1>
-          <h2>You name it, we run it.</h2>
-          <p>
+          <h2 class="mt-6">You name it, we run it.</h2>
+          <p class="mt-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
             adipisci odit, temporibus ratione quas, dicta sed quos consequatur
             perferendis perspiciatis soluta quo doloremque doloribus eaque,
@@ -75,6 +76,7 @@ import overviewImage from "../assets/overview.webp";
             <a href="">Work</a>
             <a href="">Create</a>
             <a href="">Develop</a>
+            <a href="">Study</a>
           </div>
         </div>
         <!-- Toggable with gaming, work, etc... -->
@@ -86,17 +88,41 @@ import overviewImage from "../assets/overview.webp";
         </h1>
         <h2>A workspace between every device</h2>
 
-        <p>Sync.</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+          molestias earum hic eos voluptate, ipsam explicabo aliquid praesentium
+          soluta, vitae consequuntur nobis? Necessitatibus nobis quia eius
+          impedit obcaecati quibusdam eum?
+        </p>
 
         <div></div>
       </section>
 
-      <section class="mt-6">
-        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
-          Resilliency at the core.
-        </h1>
-        <h2>Updating, please don't unplug your computer</h2>
-        <p>OSTree. bleh</p>
+      <section class="flex items-center gap-12 mt-6">
+        <div class="flex-1">
+          <h1 class="font-bold text-4xl dark:opacity-[92%]">
+            Resilliency at the core.
+          </h1>
+          <h2 class="text-xl mt-1">Install once, reinstall never</h2>
+          <p class="mt-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            adipisci odit, temporibus ratione quas, dicta sed quos consequatur
+            perferendis perspiciatis soluta quo doloremque doloribus eaque,
+            magnam incidunt consectetur quibusdam similique.
+          </p>
+        </div>
+
+        <div>
+          <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col">
+            <p class="text-4xl font-bold">:)</p>
+            <p class="mt-4 text-lg leading-6">
+              Your power went out during an update. The system has been rolled
+              back and your data is safe.
+            </p>
+
+            <p class="mt-auto text-xs">Error code: NONE</p>
+          </div>
+        </div>
       </section>
 
       <section class="mt-6">
@@ -105,12 +131,45 @@ import overviewImage from "../assets/overview.webp";
         </h1>
       </section>
 
-      <section class="mt-6">
-        <h1 class="font-bold text-3xl mb-8 dark:opacity-[92%]">
-          Radically open.
-        </h1>
+      <section class="flex items-center gap-12 mt-6">
+        <div class="flex-1">
+          <h1 class="font-bold text-4xl dark:opacity-[92%]">Radically open.</h1>
+          <h2 class="text-xl mt-2">Because you deserve freedom</h2>
+          <p class="mt-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+            adipisci odit, temporibus ratione quas, dicta sed quos consequatur
+            perferendis perspiciatis soluta quo doloremque doloribus eaque,
+            magnam incidunt consectetur quibusdam similique.
+          </p>
+        </div>
 
         <!-- commits -->
+
+        <div class="flex">
+          <article
+            class="flex bg-neutral-100 dark:bg-neutral-800 px-3 py-2 rounded-md hover:shadow-md transition-all"
+          >
+            <div>
+              <h1 class="font-medium dark:opacity-[92%]">
+                ButtonContent.vala - Increase spacing
+              </h1>
+              <div class="flex flex-row gap-2 items-center">
+                <h2 class="flex flex-row gap-1.5 items-center">
+                  <Image
+                    src={lainsImage}
+                    alt="Laince's profile picture"
+                    class="rounded-full h-5 w-5 inline-block"
+                  /> Laince
+                </h2>
+
+                <span class="ml-auto text-gray-800 dark:text-gray-300 text-sm"
+                  >tau-OS/libhelium</span
+                >
+                <CheckIcon className="text-green-500 h-4" />
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
   </div>
