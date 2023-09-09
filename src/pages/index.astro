@@ -33,7 +33,7 @@ import Carousel from "../components/Carousel";
 
           <div class="flex mt-6 gap-4 items-center">
             <a
-              href=""
+              href="#applications"
               class="flex items-center gap-1 text-violet-700 dark:text-violet-300"
               >Learn More <ArrowRightIcon
                 name="fa-solid:chevron-right"
@@ -41,7 +41,7 @@ import Carousel from "../components/Carousel";
               /></a
             >
             <a
-              href=""
+              href="https://discord.gg/5fdPuxTg5Q"
               class="flex items-center gap-1 text-violet-700 dark:text-violet-300"
               >Get involved <ArrowRightIcon
                 name="fa-solid:chevron-right"
@@ -60,7 +60,10 @@ import Carousel from "../components/Carousel";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap-reverse">
+      <section
+        class="flex items-center gap-12 flex-wrap-reverse"
+        id="applications"
+      >
         <div class="flex-1 flex-shrink">
           <Carousel
             client:load
@@ -223,7 +226,7 @@ import Carousel from "../components/Carousel";
         </div>
 
         <div class="flex flex-col gap-2 flex-1 flex-shrink w-96">
-          <CommitCard
+          <!-- <CommitCard
             url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"
           />
           <CommitCard
@@ -231,9 +234,15 @@ import Carousel from "../components/Carousel";
           />
           <CommitCard
             url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"
-          />
+          /> -->
         </div>
       </section>
     </div>
   </div>
 </Layout>
+
+<style>
+  html {
+    @apply scroll-smooth;
+  }
+</style>
