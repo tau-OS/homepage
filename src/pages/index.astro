@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
 import owenImage from "../assets/owen.webp";
 import ecosystemImage from "../assets/ecosystem.webp";
-import syncImage from "../assets/sync.webp";
+import syncImage from "../assets/sync.svg";
 import CommitCard from "../components/CommitCard.astro";
 import Carousel from "../components/Carousel";
 ---
@@ -122,7 +122,12 @@ import Carousel from "../components/Carousel";
         </div>
 
         <div class="flex-1">
-          <Image src={syncImage} alt="About tauOS" />
+          <!-- TODO: Fix light mode -->
+          <Image
+            src={syncImage}
+            alt="Syncing diagram"
+            class="invert dark:invert-0"
+          />
         </div>
       </section>
 
@@ -171,10 +176,11 @@ import Carousel from "../components/Carousel";
         </div>
 
         <div class="flex-1 hidden lg:block">
+          <!-- TODO: Placeholder -->
           <Image
             src={ecosystemImage}
             alt="About tauOS"
-            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800"
+            class="hover:shadow-md"
           />
         </div>
       </section>
