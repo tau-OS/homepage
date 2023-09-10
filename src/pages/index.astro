@@ -61,10 +61,10 @@ import Carousel from "../components/Carousel";
       </section>
 
       <section
-        class="flex items-center gap-12 flex-wrap-reverse"
+        class="flex items-center gap-12 justify-around flex-wrap-reverse"
         id="applications"
       >
-        <div class="flex-1 flex-shrink">
+        <div class="flex-grow w-[400px]">
           <Carousel
             client:load
             views={[
@@ -92,7 +92,7 @@ import Carousel from "../components/Carousel";
           />
         </div>
 
-        <div class="flex-1 items-center gap-12 justify-around">
+        <div class="flex-grow items-center gap-12 justify-around w-[300px]">
           <h1 class="font-bold text-4xl dark:opacity-[92%]">
             You name it, tau runs it
           </h1>
@@ -126,7 +126,9 @@ import Carousel from "../components/Carousel";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap justify-around">
+      <section
+        class="flex items-center gap-12 flex-wrap-reverse justify-around"
+      >
         <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col">
           <p class="text-4xl font-bold">:)</p>
           <p class="mt-4 text-lg leading-6">
@@ -177,7 +179,9 @@ import Carousel from "../components/Carousel";
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap justify-around">
+      <section
+        class="flex items-center gap-12 flex-wrap-reverse justify-around"
+      >
         <div class="relative hover:shadow-md">
           <div
             class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end backdrop-blur-sm hover:backdrop-blur-none transition-all rounded-2xl"

@@ -14,7 +14,11 @@ interface CarouselItem {
 const Carousel: FC<{ views: CarouselItem[] }> = (props) => {
   const panels = props?.views?.map(({ description, image }) => (
     <Tab.Panel>
-      <img src={image} alt={description} className="h-96" />
+      <img
+        src={image}
+        alt={description}
+        className="h-96 object-contain object-center"
+      />
     </Tab.Panel>
   ));
   const tabs = props?.views?.map(({ name }) => (
