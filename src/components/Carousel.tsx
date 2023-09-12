@@ -12,8 +12,8 @@ interface CarouselItem {
 }
 
 const Carousel: FC<{ views: CarouselItem[] }> = (props) => {
-  const panels = props?.views?.map(({ description, image }) => (
-    <Tab.Panel>
+  const panels = props?.views?.map(({ name, description, image }) => (
+    <Tab.Panel key={name}>
       <img
         src={image}
         alt={description}
@@ -22,12 +22,14 @@ const Carousel: FC<{ views: CarouselItem[] }> = (props) => {
     </Tab.Panel>
   ));
   const tabs = props?.views?.map(({ name }) => (
-    <Tab as={Fragment}>
+    <Tab as={Fragment} key={name}>
       {({ selected }) => (
         <button
           className={classNames(
             "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
-            selected ? "bg-neutral-200 dark:bg-neutral-700 shadow" : "hover:bg-white/[0.12]"
+            selected
+              ? "bg-neutral-200 dark:bg-neutral-700 shadow"
+              : "hover:bg-white/[0.12]"
           )}
         >
           {name}
