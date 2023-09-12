@@ -28,7 +28,7 @@ const Carousel: FC<{ views: CarouselItem[] }> = (props) => {
           className={classNames(
             "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
             selected
-              ? "bg-neutral-200 dark:bg-neutral-700 shadow"
+              ? "bg-neutral-300 dark:bg-neutral-700 shadow"
               : "hover:bg-white/[0.12]"
           )}
         >
@@ -41,7 +41,7 @@ const Carousel: FC<{ views: CarouselItem[] }> = (props) => {
   return (
     <Tab.Group>
       <Tab.Panels>{panels}</Tab.Panels>
-      <Tab.List className="flex flex-row gap-6 justify-center bg-neutral-100 dark:bg-neutral-800 rounded-lg">
+      <Tab.List className="flex flex-row gap-6 justify-center bg-neutral-200 dark:bg-neutral-800 rounded-lg">
         {tabs}
       </Tab.List>
     </Tab.Group>
