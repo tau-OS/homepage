@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
 import { ArrowRightIcon, LockClosedIcon } from "@heroicons/react/24/outline";
+import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
 import owenImage from "../assets/owen.webp";
 import ecosystemImage from "../assets/ecosystem.webp";
@@ -10,14 +11,15 @@ import CommitCard from "../components/CommitCard.astro";
 import Carousel from "../components/Carousel";
 import SEOFragment from "../components/SeoFragment.astro";
 
-const title = "Welcome to tauOS"
-const description = "Discover the future of desktop computing with tauOS, currently in development. tauOS is designed with ease of use in mind, featuring human-centric design, an unbreakable core, and an syncing service that synchronizes files, configurations, keys, and more across all your devices."
+const title = "Welcome to tauOS";
+const description =
+  "Discover the future of desktop computing with tauOS, currently in development. tauOS is designed with ease of use in mind, featuring human-centric design, an unbreakable core, and an syncing service that synchronizes files, configurations, keys, and more across all your devices.";
 
 const seo = {
   title,
   description,
-  url: Astro.url.pathname
-}
+  url: Astro.url.pathname,
+};
 ---
 
 <!-- TODO: hack for "min margins", move to layout -->
