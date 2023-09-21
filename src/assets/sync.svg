@@ -1,17 +1,1 @@
-<svg width="500" height="366" viewBox="0 0 500 366" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="15" y="40" width="305" height="210" rx="24" fill="white" fill-opacity="0.1"/>
-<rect x="17.5" y="42.5" width="300" height="205" rx="21.5" stroke="white" stroke-opacity="0.5" stroke-width="5" stroke-dasharray="10 10"/>
-<rect x="269" y="178" width="210" height="138" fill="#888888"/>
-<rect x="266" y="176" width="213" height="143" rx="6" stroke="white" stroke-width="12"/>
-<rect x="46" y="66" width="57" height="57" rx="8" fill="white"/>
-<rect x="119" y="66" width="57" height="57" rx="8" fill="white"/>
-<rect x="192" y="66" width="57" height="57" rx="8" fill="white"/>
-<rect x="46" y="139" width="57" height="57" rx="8" fill="white"/>
-<rect x="289" y="204" width="38" height="36" rx="8" fill="white"/>
-<rect x="339" y="204" width="38" height="36" rx="8" fill="white"/>
-<rect x="389" y="204" width="38" height="36" rx="8" fill="white"/>
-<rect x="289" y="252" width="38" height="37" rx="8" fill="white"/>
-<path d="M345 65H382V155M382 155L364.5 137.222M382 155L400 137.222" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="305" y="335" width="130" height="12" rx="6" fill="white"/>
-<rect x="350" y="325" width="40" height="12" fill="white"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="366" fill="none" viewBox="0 0 500 366"><rect width="305" height="210" x="15" y="40" fill="#fff" fill-opacity=".1" rx="24"/><rect width="300" height="205" x="17.5" y="42.5" stroke="#fff" stroke-dasharray="20 30" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".5" stroke-width="5" rx="21.5"/><rect width="210" height="138" x="269" y="178" fill="#888"/><rect width="213" height="143" x="266" y="176" stroke="#fff" stroke-width="12" rx="6"/><rect width="57" height="57" x="46" y="66" fill="#fff" rx="8"/><rect width="57" height="57" x="119" y="66" fill="#fff" rx="8"/><rect width="57" height="57" x="192" y="66" fill="#fff" rx="8"/><rect width="57" height="57" x="46" y="139" fill="#fff" rx="8"/><rect width="38" height="36" x="289" y="204" fill="#fff" rx="8"/><rect width="38" height="36" x="339" y="204" fill="#fff" rx="8"/><rect width="38" height="36" x="389" y="204" fill="#fff" rx="8"/><rect width="38" height="37" x="289" y="252" fill="#fff" rx="8"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" d="M345 65H382V155M382 155L364.5 137.222M382 155L400 137.222"/><rect width="130" height="12" x="305" y="335" fill="#fff" rx="6"/><rect width="40" height="12" x="350" y="325" fill="#fff"/></svg>

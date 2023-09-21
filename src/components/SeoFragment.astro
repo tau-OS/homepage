@@ -1,0 +1,19 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    url: string;
+}
+
+const { title, description, url } = Astro.props;
+// Lord forgive me for what I'm about to do
+const website = "https://tauos.co";
+---
+
+<Fragment>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={website + url} />
+    <meta property="og:image" content="/logo.png" />
+    <meta name="description" content={description} />
+</Fragment>
