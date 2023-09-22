@@ -28,9 +28,9 @@ const seo = {
 
   <Navbar pathname={Astro.url.pathname} client:load />
 
-  <div class="mx-6 my-20">
-    <div class="mx-auto max-w-5xl flex flex-col gap-20">
-      <section class="flex items-center gap-12 justify-around">
+  <div class="mx-6 mb-10 md:my-20">
+    <div class="mx-auto max-w-5xl flex flex-col gap-10 md:gap-20">
+      <section class="flex items-center gap-6 md:gap-12 justify-around">
         <div class="flex-1">
           <h1 class="font-bold text-4xl md:text-5xl mb-4 dark:opacity-[92%]">
             Welcome to your next-generation operating system.
@@ -74,7 +74,7 @@ const seo = {
       </section>
 
       <section
-        class="flex items-center gap-12 justify-around flex-wrap-reverse"
+        class="flex items-center gap-6 md:gap-12 justify-around flex-wrap-reverse"
         id="applications"
       >
         <div class="flex-grow w-[400px]">
@@ -109,7 +109,9 @@ const seo = {
           />
         </div>
 
-        <div class="flex-grow items-center gap-12 justify-around w-[300px]">
+        <div
+          class="flex-grow items-center gap-6 md:gap-12 justify-around w-[300px]"
+        >
           <h1 class="font-bold md:text-3xl text-4xl dark:opacity-[92%]">
             You name it, tau runs it
           </h1>
@@ -123,7 +125,9 @@ const seo = {
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap justify-around">
+      <section
+        class="flex items-center gap-6 md:gap-12 flex-wrap justify-around"
+      >
         <div class="flex-grow w-[300px]">
           <h1 class="font-bold md:text-3xl text-4xl dark:opacity-[92%]">
             All of your stuff, on all of your devices
@@ -148,7 +152,7 @@ const seo = {
       </section>
 
       <section
-        class="flex items-center gap-12 flex-wrap-reverse justify-around"
+        class="flex items-center gap-6 md:gap-12 flex-wrap-reverse justify-around"
       >
         <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col text-white">
           <p class="md:text-3xl text-4xl font-bold">:)</p>
@@ -174,7 +178,9 @@ const seo = {
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap justify-around">
+      <section
+        class="flex items-center gap-6 md:gap-12 flex-wrap justify-around"
+      >
         <div class="flex-grow w-[400px]">
           <h1 class="font-bold md:text-3xl text-4xl dark:opacity-[92%]">
             An ecosystem that awes.
@@ -201,7 +207,7 @@ const seo = {
       </section>
 
       <section
-        class="flex items-center gap-12 flex-wrap-reverse justify-around"
+        class="flex items-center gap-6 md:gap-12 flex-wrap-reverse justify-around"
       >
         <div class="relative hover:shadow-md">
           <div
@@ -239,7 +245,9 @@ const seo = {
         </div>
       </section>
 
-      <section class="flex items-center gap-12 flex-wrap justify-around">
+      <section
+        class="flex items-center gap-6 md:gap-12 flex-wrap justify-around"
+      >
         <div class="flex-1">
           <h1 class="font-bold md:text-3xl text-4xl dark:opacity-[92%]">
             Radically open.
