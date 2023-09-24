@@ -68,7 +68,7 @@ const seo = {
           <Image
             src={overviewImage}
             alt="About tauOS"
-            class="rounded-2xl hover:shadow-md transition-all bg-neutral-100 dark:bg-neutral-800 h-96"
+            class="rounded-2xl shadow-md transition-all bg-neutral-100 dark:bg-neutral-800 h-96 object-cover object-center"
           />
         </div>
       </section>
@@ -201,7 +201,7 @@ const seo = {
           <Image
             src={ecosystemImage}
             alt="An image of an IDE for developing apps for tauOS"
-            class="hover:shadow-md"
+            class="shadow-md"
           />
         </div>
       </section>
@@ -209,7 +209,7 @@ const seo = {
       <section
         class="flex items-center gap-6 md:gap-12 flex-wrap-reverse justify-around"
       >
-        <div class="relative hover:shadow-md">
+        <div class="relative shadow-md">
           <div
             class="absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-end backdrop-blur-sm hover:backdrop-blur-none transition-all rounded-2xl"
           >
@@ -228,7 +228,7 @@ const seo = {
           />
         </div>
 
-        <div class="flex-1">
+        <div class="flex-grow w-[400px]">
           <h1 class="font-bold text-3xl md:text-4xl dark:opacity-[92%]">
             Privacy as a first class citizen
           </h1>
@@ -248,7 +248,7 @@ const seo = {
       <section
         class="flex items-center gap-6 md:gap-12 flex-wrap justify-around"
       >
-        <div class="flex-1">
+        <div class="flex-grow w-[400px]">
           <h1 class="font-bold text-3xl md:text-4xl dark:opacity-[92%]">
             Radically open.
           </h1>
@@ -260,7 +260,7 @@ const seo = {
           </p>
         </div>
 
-        <div class="flex flex-col gap-2 flex-1 flex-shrink w-96">
+        <div class="flex flex-col gap-2 flex-grow w-[400px]">
           <CommitCard
             url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"
           />
