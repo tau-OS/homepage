@@ -5,8 +5,8 @@ import { useMemo } from "react";
 
 const navigation = [
   { name: "Overview", href: "/" },
-  { name: "Downloads", href: "https://github.com/tau-OS/isos" },
-  { name: "Get Involved", href: "https://discord.gg/5fdPuxTg5Q" },
+  // { name: "Downloads", href: "https://github.com/tau-OS/isos" },
+  { name: "Get Involved", href: "/get-involved" },
   { name: "Fyra Labs", href: "https://fyralabs.com" },
 ];
 

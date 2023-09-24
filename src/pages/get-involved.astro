@@ -1,0 +1,134 @@
+---
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import SEOFragment from "../components/SeoFragment.astro";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+
+const title = "tauOS";
+const description =
+  "tauOS is built by our community, which is much larger than just Fyra Labs. Learn about how you can get involved, and build something great with us.";
+
+const seo = {
+  title,
+  description,
+  url: Astro.url.pathname,
+};
+---
+
+<Layout title={title}>
+  <SEOFragment {...seo} slot="head" />
+
+  <Navbar pathname={Astro.url.pathname} client:load />
+
+  <div class="mx-6 mb-10 md:my-20">
+    <div class="mx-auto max-w-5xl flex flex-col gap-10 md:gap-20">
+      <section>
+        <h1 class="text-5xl font-bold mb-2 dark:opacity-[92%]">Get Involved</h1>
+        <h2 class="text-gray-800 dark:text-gray-300 text-lg">
+          tauOS is built by our community, which is much larger than just Fyra
+          Labs. Learn about how you can get involved, and build something great
+          with us.
+        </h2>
+      </section>
+
+      <div class="flex flex-col gap-4">
+        <section
+          class="flex flex-col bg-neutral-100 dark:bg-neutral-800 shadow-md transition-all rounded-2xl min-h-64 px-8 py-6 gap-3"
+        >
+          <h1 class="font-bold text-3xl dark:opacity-[92%]">Chat with us</h1>
+
+          <p class="dark:opacity-[92%]">
+            Our community is primarily based on Discord, but we do have a bridge
+            to Matrix. While most of the discussion is related to tauOS and Fyra
+            Labs, we also have a vibrant community that talks about other
+            things, such as general technology.
+          </p>
+
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="https://discord.gg/5fdPuxTg5Q"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Join our Discord <ArrowRightIcon className="h-4 w-4" /></a
+            >
+            <a
+              href="https://matrix.to/#/#hub:fyralabs.com"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Join our Matrix <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </section>
+
+        <section
+          class="flex flex-col bg-neutral-100 dark:bg-neutral-800 shadow-md transition-all rounded-2xl min-h-64 px-8 py-6 gap-3"
+        >
+          <h1 class="font-bold text-3xl dark:opacity-[92%]">Contribute code</h1>
+
+          <p class="dark:opacity-[92%]">
+            All of our code is open and developed the the community. Have a
+            feature or bug that you'd like to work on? Go for it. While we
+            primarily track development on our GitHub issues, we also discuss
+            development in our chats, so please join those too.
+          </p>
+
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="https://github.com/tau-OS"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >View our GitHub <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </section>
+
+        <section
+          class="flex flex-col bg-neutral-100 dark:bg-neutral-800 shadow-md transition-all rounded-2xl min-h-64 px-8 py-6 gap-3"
+        >
+          <h1 class="font-bold text-3xl dark:opacity-[92%]">
+            Translate to your language
+          </h1>
+
+          <p class="dark:opacity-[92%]">
+            We want to offer tauOS in as many languages as possible. You can
+            help us localize tauOS on our Weblate, a service that lets you
+            translate our software, without having to get into the weeds of the
+            code.
+          </p>
+
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="https://weblate.fyralabs.com/projects/tauOS/"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >View our Weblate <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </section>
+
+        <section
+          class="flex flex-col bg-neutral-100 dark:bg-neutral-800 shadow-md transition-all rounded-2xl min-h-64 px-8 py-6 gap-3"
+        >
+          <h1 class="font-bold text-3xl dark:opacity-[92%]">
+            Follow us on social media
+          </h1>
+
+          <p class="dark:opacity-[92%]">
+            We post lots of sneak peaks and updates on our Twitter and Mastodon
+            accounts. Be sure to follow us to stay updated with the progress of
+            tauOS.
+          </p>
+
+          <div class="flex gap-2 flex-wrap">
+            <a
+              href="https://twitter.com/tauOS_"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Follow us on Twitter <ArrowRightIcon className="h-4 w-4" /></a
+            >
+            <a
+              href="https://fedi.fyralabs.com/@tau"
+              class="flex flex-row items-center gap-1 text-violet-700 dark:text-violet-300"
+              >Follow us on Mastodon <ArrowRightIcon className="h-4 w-4" /></a
+            >
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</Layout>
