@@ -17,7 +17,8 @@ Simply clone this repo, then:
 
 ```bash
 pnpm install
-# Now you can run pmpm dev for a development server, or pnpm build.
+# Now you can run pmpm dev for a development server
+# or pnpm build for a production build.
 ```
 
 ## 👋 Bye?
