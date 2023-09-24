@@ -54,10 +54,10 @@ const Navbar: React.FC<{
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.href === normalizedPathname
+                          item.href.replace(/\/$/, "") === normalizedPathname
                             ? "bg-zinc-700 text-white"
                             : "hover:bg-zinc-800 hover:text-white",
-                          item.href !== normalizedPathname
+                          item.href.replace(/\/$/, "") !== normalizedPathname
                             ? forceDark
                               ? "text-gray-300"
                               : "text-gray-800 dark:text-gray-300"
@@ -65,7 +65,7 @@ const Navbar: React.FC<{
                           "px-3 py-2 rounded-md text-sm font-medium transition-all",
                         )}
                         aria-current={
-                          item.href === normalizedPathname ? "page" : undefined
+                          item.href.replace(/\/$/, "") === normalizedPathname ? "page" : undefined
                         }
                       >
                         {item.name}
