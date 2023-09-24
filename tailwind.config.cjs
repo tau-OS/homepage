@@ -8,9 +8,9 @@ module.exports = {
       fontFamily: {
         sans: [
           "Satoshi-Variable",
-          "Satoshi-Variable\\ override",
+          "Satoshi-Variable fallback",
           "Satoshi-Regular",
-          "Satoshi-Regular\\ override",
+          "Satoshi-Regular fallback",
           ...defaultTheme.fontFamily.sans,
         ],
       },
