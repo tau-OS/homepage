@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar";
 import { ArrowRightIcon, LockClosedIcon } from "@heroicons/react/24/outline";
+import { Icon } from "astro-icon";
 import { Image } from "astro:assets";
 import overviewImage from "../assets/overview.webp";
 import owenImage from "../assets/owen.webp";
@@ -28,7 +29,7 @@ const seo = {
 
   <Navbar pathname={Astro.url.pathname} client:load />
 
-  <a class="hidden" rel="me" href="https://fedi.fyralabs.com/@tau" />
+  <a class="hidden" rel="me" href="https://fedi.fyralabs.com/@tau"></a>
 
   <div class="mx-6 mb-10 md:my-20">
     <div class="mx-auto max-w-5xl flex flex-col gap-10 md:gap-20">
@@ -156,7 +157,9 @@ const seo = {
       <section
         class="flex items-center gap-6 md:gap-12 flex-wrap-reverse justify-around"
       >
-        <div class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col text-white shadow-md">
+        <div
+          class="h-72 w-96 bg-blue-700 rounded p-4 flex flex-col text-white shadow-md"
+        >
           <p class="text-3xl md:text-4xl font-bold">:)</p>
           <p class="mt-4 text-lg leading-6">
             Your power went out during an update. The system has been rolled
@@ -272,6 +275,57 @@ const seo = {
           <CommitCard
             url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"
           />
+        </div>
+      </section>
+
+      <section
+        class="flex flex-col justify-center items-center rounded-2xl bg-neutral-100 dark:bg-neutral-800 shadow-md px-8 py-6 text-center min-h-[250px] bg-gradient-to-br from-purple-200 to-purple-50 dark:from-fuchsia-500/50 dark:bg-purple-700/10"
+      >
+        <h1 class="font-bold text-2xl md:text-3xl">
+          Ready for a next generation desktop?
+        </h1>
+
+        <h2 class="md:text-lg text-gray-700 dark:text-gray-300 mt-1">
+          Follow us for sneak peaks, announcements, and other updates.
+        </h2>
+
+        <div class="mt-3 flex flex-row gap-5">
+          <a
+            href="https://twitter.com/tauOS_"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-violet-800 dark:hover:text-violet-500 transition-all"
+            aria-label="Twitter"
+          >
+            <Icon name="fa-brands:twitter" class="h-6" />
+          </a>
+          <a
+            href="https://fedi.fyralabs.com/@tau"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-violet-800 dark:hover:text-violet-500 transition-all"
+            aria-label="Mastodon"
+          >
+            <Icon name="fa-brands:mastodon" class="h-6" />
+          </a>
+          <a
+            href="https://github.com/tau-OS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-violet-800 dark:hover:text-violet-500 transition-all"
+            aria-label="GitHub"
+          >
+            <Icon name="fa-brands:github" class="h-6" />
+          </a>
+          <a
+            href="https://discord.gg/5fdPuxTg5Q"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-violet-800 dark:hover:text-violet-500 transition-all"
+            aria-label="Discord"
+          >
+            <Icon name="fa-brands:discord" class="h-6" />
+          </a>
         </div>
       </section>
     </div>
