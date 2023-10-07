@@ -29,7 +29,7 @@ const Carousel: FC<{ views: CarouselItem[] }> = (props) => {
             "w-full rounded-lg py-2.5 text-sm font-medium leading-5",
             selected
               ? "bg-neutral-300 dark:bg-neutral-700 shadow"
-              : "hover:bg-white/[0.12]"
+              : "hover:bg-white/[0.12]",
           )}
         >
           {name}

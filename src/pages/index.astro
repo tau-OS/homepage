@@ -266,7 +266,7 @@ const seo = {
         </div>
 
         <div class="flex flex-col gap-2 flex-grow w-[400px]">
-          <CommitCard
+          <!-- <CommitCard
             url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"
           />
           <CommitCard
@@ -274,7 +274,7 @@ const seo = {
           />
           <CommitCard
             url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"
-          />
+          /> -->
         </div>
       </section>
 
@@ -289,21 +289,46 @@ const seo = {
           Follow us for sneak peaks, announcements, and other updates.
         </h2>
 
-        <div class="text-left mt-4 flex flex-col">
+        <form data-members-form class="group text-left mt-4 flex flex-col">
           <label for="email" class="text-sm mb-1">Email</label>
-          <input
-            placeholder="owo@nya.com"
-            id="email"
-            maxlength="120"
-            class="w-72 dark:bg-neutral-800 bg-neutral-300 bg-opacity-20 border border-gray-600 duration-200 ease-in-out focus:ring-2 focus:ring-violet-800 outline-none px-3 py-1 rounded text-base transition-all leading-8"
-          />
-          <button type="button"><ArrowRightIcon /></button>
-        </div>
+          <div class="flex flex-row gap-2">
+            <input
+              placeholder="owo@nya.com"
+              id="email"
+              type="email"
+              maxlength="120"
+              class="w-72 dark:bg-neutral-800 bg-neutral-300 bg-opacity-20 border border-gray-600 duration-200 ease-in-out focus:ring-2 focus:ring-violet-800 outline-none px-3 py-1 rounded text-base transition-all leading-8"
+              required
+              data-members-email
+            />
+            <input type="hidden" data-members-label value="tauOS" />
+            <button
+              type="submit"
+              class="p-3 bg-violet-600 focus:ring-2 focus:ring-violet-800 outline-none hover:bg-violet-700 rounded text-center text-gray-200 text-lg transition-colors"
+            >
+              <ArrowRightIcon className="w-5 group-[.loading]:hidden" />
+              <Icon
+                name="fa-solid:circle-notch"
+                className="hidden w-5 animate-spin group-[.loading]:block"
+              />
+            </button>
+          </div>
+          <p class="mt-1 text-sm hidden group-[.success]:block">
+            Confirm your subscription in the email we sent you.
+          </p>
+          <p
+            data-members-error
+            class="mt-1 text-sm hidden group-[.error]:block"
+          >
+          </p>
+        </form>
 
         <div class="flex items-center w-72 my-1">
-          <div class="flex-grow bg bg-gray-300 h-px"></div>
-          <div class="flex-grow-0 mx-5 text dark:text-white">or</div>
-          <div class="flex-grow bg bg-gray-300 h-px"></div>
+          <div class="flex-grow bg bg-neutral-800 dark:bg-neutral-300 h-px">
+          </div>
+          <div class="flex-grow-0 mx-5 text">or</div>
+          <div class="flex-grow bg bg-neutral-800 dark:bg-neutral-300 h-px">
+          </div>
         </div>
 
         <div class="flex flex-row gap-5">
@@ -354,3 +379,10 @@ const seo = {
     @apply scroll-smooth;
   }
 </style>
+
+<script
+  defer
+  src="https://unpkg.com/@tryghost/portal@latest/umd/portal.min.js"
+  data-ghost="https://blog.fyralabs.com"
+  data-api="https://blog.fyralabs.com/ghost/api/content/"
+  data-key="109ed983b80cf98c91a4a1ba2b"></script>
