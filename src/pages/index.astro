@@ -266,15 +266,15 @@ const seo = {
         </div>
 
         <div class="flex flex-col gap-2 flex-grow w-[400px]">
-          <CommitCard
-            url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"
-          />
-          <CommitCard
-            url="https://github.com/tau-OS/libhelium/commit/a868a129066b3e22dc3f392857c413b7575a03c0"
-          />
-          <CommitCard
-            url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"
-          />
+          <!--<CommitCard-->
+          <!--  url="https://github.com/tau-OS/tau-helium/commit/3e8e26e123c9f384dfd1ad00e5e92257c236c048"-->
+          <!--/>-->
+          <!--<CommitCard-->
+          <!--  url="https://github.com/tau-OS/libhelium/commit/a868a129066b3e22dc3f392857c413b7575a03c0"-->
+          <!--/>-->
+          <!--<CommitCard-->
+          <!--  url="https://github.com/tau-OS/xenon/commit/e9fec5441369e5b9aac0aeb32db73a2142b64a07"-->
+          <!--/>-->
         </div>
       </section>
 
@@ -289,7 +289,18 @@ const seo = {
           Follow us for sneak peaks, announcements, and other updates.
         </h2>
 
-        <div class="mt-3 flex flex-row gap-5">
+        <div class="text-left mt-3">
+          <label for="email">Email</label>
+          <input placeholder="owo@nya.com" id="email" maxlength="120" class="dark:bg-neutral-800 bg-neutral-300 bg-opacity-20 border border-gray-600 duration-200 ease-in-out focus:ring-2 focus:ring-violet-800 outline-none px-3 py-1 rounded text-base transition-all w-full leading-8"/>
+        </div>
+
+        <div class="flex items-center w-72 my-1">
+          <div class="flex-grow bg bg-gray-300 h-0.5"></div>
+          <div class="flex-grow-0 mx-5 text dark:text-white">or</div>
+          <div class="flex-grow bg bg-gray-300 h-0.5"></div>
+        </div>
+
+        <div class="flex flex-row gap-5">
           <a
             href="https://twitter.com/tauOS_"
             target="_blank"
