@@ -20,7 +20,7 @@ const Navbar: React.FC<{
 }) => {
   const normalizedPathname = useMemo(
     () => pathname.replace(/\/$/, ""),
-    [pathname]
+    [pathname],
   );
   return (
     <Disclosure as="nav" className={classNames("mb-4")}>
@@ -62,7 +62,7 @@ const Navbar: React.FC<{
                               ? "text-gray-300"
                               : "text-gray-800 dark:text-gray-300"
                             : "",
-                          "px-3 py-2 rounded-md text-sm font-medium transition-all"
+                          "px-3 py-2 rounded-md text-sm font-medium transition-all",
                         )}
                         aria-current={
                           item.href.replace(/\/$/, "") === normalizedPathname
@@ -103,7 +103,7 @@ const Navbar: React.FC<{
                           ? "text-gray-300"
                           : "text-gray-800 dark:text-gray-300"
                         : "",
-                      "block px-3 py-2 rounded-md text-base font-medium"
+                      "block px-3 py-2 rounded-md text-base font-medium",
                     )}
                     aria-current={
                       item.href === normalizedPathname ? "page" : undefined

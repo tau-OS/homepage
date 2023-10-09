@@ -279,7 +279,7 @@ const seo = {
       </section>
 
       <section
-        class="flex flex-col justify-center items-center rounded-2xl bg-neutral-100 dark:bg-neutral-800 shadow-md px-8 py-6 text-center min-h-[250px] bg-gradient-to-br from-purple-200 to-purple-50 dark:from-fuchsia-500/50 dark:bg-purple-700/10"
+        class="flex flex-col justify-center items-center rounded-2xl bg-neutral-100 dark:bg-neutral-800 shadow-md px-8 py-6 text-center min-h-[300px] bg-gradient-to-br from-purple-200 to-purple-50 dark:from-fuchsia-500/50 dark:bg-purple-700/10"
       >
         <h1 class="font-bold text-2xl md:text-3xl">
           Ready for a next generation desktop?
@@ -289,7 +289,49 @@ const seo = {
           Follow us for sneak peaks, announcements, and other updates.
         </h2>
 
-        <div class="mt-3 flex flex-row gap-5">
+        <form data-members-form class="group text-left mt-4 flex flex-col">
+          <label for="email" class="text-sm mb-1">Email</label>
+          <div class="flex flex-row gap-2">
+            <input
+              placeholder="owo@nya.com"
+              id="email"
+              type="email"
+              maxlength="120"
+              class="w-72 dark:bg-neutral-800 bg-neutral-300 bg-opacity-20 border border-gray-600 duration-200 ease-in-out focus:ring-2 focus:ring-violet-800 outline-none px-3 py-1 rounded text-base transition-all leading-8"
+              required
+              data-members-email
+            />
+            <input type="hidden" data-members-label value="tauOS" />
+            <button
+              type="submit"
+              class="p-3 bg-violet-600 focus:ring-2 focus:ring-violet-800 outline-none hover:bg-violet-700 rounded text-center text-gray-200 text-lg transition-colors"
+            >
+              <ArrowRightIcon className="w-5 group-[.loading]:hidden" />
+              <Icon
+                name="fa-solid:circle-notch"
+                className="hidden w-5 animate-spin group-[.loading]:block"
+              />
+            </button>
+          </div>
+          <p class="mt-1 text-sm hidden group-[.success]:block">
+            Confirm your subscription in the email we sent you.
+          </p>
+          <p
+            data-members-error
+            class="mt-1 text-sm hidden group-[.error]:block"
+          >
+          </p>
+        </form>
+
+        <div class="flex items-center w-72 my-1">
+          <div class="flex-grow bg bg-neutral-800 dark:bg-neutral-300 h-px">
+          </div>
+          <div class="flex-grow-0 mx-5 text">or</div>
+          <div class="flex-grow bg bg-neutral-800 dark:bg-neutral-300 h-px">
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-5">
           <a
             href="https://twitter.com/tauOS_"
             target="_blank"
@@ -337,3 +379,10 @@ const seo = {
     @apply scroll-smooth;
   }
 </style>
+
+<script
+  defer
+  src="https://unpkg.com/@tryghost/portal@latest/umd/portal.min.js"
+  data-ghost="https://blog.fyralabs.com"
+  data-api="https://blog.fyralabs.com/ghost/api/content/"
+  data-key="109ed983b80cf98c91a4a1ba2b"></script>
